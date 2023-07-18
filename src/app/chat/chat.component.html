@@ -1,0 +1,19 @@
+<div class="main">
+    <div class="gif">
+        <img src="https://media0.giphy.com/media/S60CrN9iMxFlyp7uM8/giphy.gif?cid=ecf05e47649dvkysavk0s4s275w3qwy5lkhnckhds1jg8cn2&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="">
+      </div>
+    <div class="container" [class.is-processing]="isProcessing">
+        <h1>Parenting Consultant</h1>
+        <div class="chat-container" #chatContainer>
+          <app-chat-message *ngFor="let message of chatHistory" [message]="message"></app-chat-message>
+          <div class="loader" *ngIf="isProcessing">Loading...</div>
+        </div>
+        <div class="input-container">
+          <input type="text" [(ngModel)]="userMessage" (keyup.enter)="sendMessage()" placeholder="Type your message..." />
+          <button (click)="sendMessage()">Send</button>         
+            <button (click)="startListening()" [disabled]="isListening">Start Listening</button>
+            <button (click)="stopListening()" [disabled]="!isListening">Stop Listening</button>
+          </div>       
+      </div>
+</div>
+  

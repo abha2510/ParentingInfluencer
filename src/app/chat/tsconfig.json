@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "types": [
+        "node",
+        "web-speech-recognition" // Add the name of your custom declaration file here
+      ]
+    }
+  }
+  

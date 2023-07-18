@@ -1,0 +1,94 @@
+.container {
+    width: 700px;
+    margin:  auto;
+    margin-left: 25%;
+ 
+   
+  }
+  .main{
+    display: flex;
+    margin: auto;
+  
+    width: 90%;
+  }
+  .gif{
+    width: 200px;
+    margin-top: 82px;
+  }
+  h1 {
+    text-align: center;
+    color:rgb(254, 254, 254);
+    margin-top: 20px;
+  }
+  
+  .chat-container {
+    /* background-color: #f0f0f0; */
+    background: url('https://66.media.tumblr.com/59d9990a0adcb19e9f687a47953226b3/tumblr_ouztgbH0CG1vj8v9mo4_1280.png');
+    border: 1px solid #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px;
+    height: 80vh;
+    overflow-y: scroll;
+    max-height: 350px;
+  }
+  
+  .message {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+  }
+  
+  .bot-message {
+    background-color: #2fa85b;
+    color: white;
+    float: left;
+  }
+  
+  .input-container {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f39f21;
+  }
+  .chat-container::ng-deep .message:last-child {
+    scroll-margin-block: 1px;
+  }
+  
+  /* Hide the loader when not processing */
+  .loader {
+    display: none;
+  }
+  
+  /* Show the loader when processing */
+  .is-processing .loader {
+    display: block;
+ 
+  }
