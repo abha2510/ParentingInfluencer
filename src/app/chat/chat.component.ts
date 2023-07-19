@@ -93,7 +93,7 @@ export class ChatComponent {
       this.chatHistory.push({ role: 'user', content: this.userMessage });
       this.isProcessing = true;
       try {
-        const response = await this.http.post<any>('https://influencer-6bfa.onrender.com/getChatbotResponse', {
+        const response = await this.http.post<any>('https://parentinflencer.onrender.com/getChatbotResponse', {
           user_input: this.userMessage
         }).toPromise();
 

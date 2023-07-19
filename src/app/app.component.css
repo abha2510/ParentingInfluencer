@@ -1,8 +1,9 @@
 .container{
     background: rgb(123,110,217);
-    background: linear-gradient(90deg, rgba(123,110,217,1) 45%, rgba(225,167,229,1) 81%);
+background: linear-gradient(90deg, rgba(123,110,217,1) 45%, rgba(225,167,229,1) 81%);
 background-color: rgb(241, 234, 234);
 width: 100%;
 height: 100vh;
 margin: 0;
+padding: 0;
 }
